@@ -1,0 +1,73 @@
+public class Main {
+
+    public static void main(String[] args) {
+           /* System.out.println("Hello!!!");
+          //Tipos Primitivos  
+            int vInteiro = 10;
+            double vDouble = 1.0;
+            float vFloat = 1.3f;
+            boolean vBoolean = true;
+           
+            //tipos por referencia
+            String vTexto = "Parabens voce conseguiu";
+           
+            System.out.println("Variavel inteira: " +vInteiro);
+            System.out.println("Variavel double: " +vDouble);
+           
+            System.out.println("-------------///-------------");
+           
+            System.out.println("Variavel inteira: " +vInteiro
+                                             +"\nVariavel double: " +vDouble
+                                             +"\nVariavel float: " +vFloat
+                                             +"\nVariavel boolean: " +vBoolean
+                                             +"\nVariavel texto: " +vTexto);
+           
+           
+           //instanciação de classe pra criar objeto sc
+           Scanner sc = new Scanner (System.in);
+           
+           System.out.println("Digite o nome: ");
+           String aluno = sc.nextLine();
+           
+           System.out.println("Digite a idade: ");
+           int idade = sc.nextInt();
+           
+           System.out.println("Digite o peso: ");
+           float peso = sc.nextFloat();
+           
+           System.out.println("Digite a altura: ");
+           float altura = sc.nextFloat();
+           
+           System.out.println("-------------///-------------");
+           System.out.println("Dados resgatados:");
+           
+           System.out.println("Nome: " +aluno
+                                             +"\nIdade: " +idade
+                                             +"\nAltura: " +altura
+                                             +"\nPeso: " +peso);
+         
+           
+           //Mostrar em PopUp
+            String nome;
+            nome = JOptionPane.showInputDialog("Digite o nome: ");
+            JOptionPane.showInputDialog(null, "O nome é " +nome);
+           
+            // Converter string para inteiro
+           
+            String nome;
+            nome = JOptionPane.showInputDialog("Digite o Nome: ");
+            String idade = JOptionPane.showInputDialog("Digite a idade: ");
+            int idadeInt = Integer.parseInt(idade);
+            String altura = JOptionPane.showInputDialog("Digite a altura: ");
+            float alturaFloat = Float.parseFloat(altura);
+            JOptionPane.showMessageDialog(null, "O nome é: " +nome
+                                                                     +"\nA idade é: "+idade
+                                                                     +"\nA altura é: " +altura);
+            */
+           
+           
+           
+           
+    }
+   
+}
