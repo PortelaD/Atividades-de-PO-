@@ -1,0 +1,22 @@
+public class Main {
+
+    public static void main(String[] args) {
+         
+         //Cadastro pessoa
+            String nome;
+            nome = JOptionPane.showInputDialog("Digite o Nome: ");
+            String idade = JOptionPane.showInputDialog("Digite a idade: ");
+            int idadeInt = Integer.parseInt(idade);
+            String altura = JOptionPane.showInputDialog("Digite a altura: ");
+            float alturaFloat = Float.parseFloat(altura);
+            JOptionPane.showMessageDialog(null, "O nome é: " +nome
+                                                                     +"\nA idade é: "+idade
+                                                                     +"\nA altura é: " +altura);
+           
+           
+           
+           
+           
+    }
+   
+}
