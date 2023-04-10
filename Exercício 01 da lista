@@ -1,0 +1,43 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercício.pkg1;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Daniel
+ * 1. Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, 
+ * mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. 
+ * Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas vendas, o salário fixo e o 
+ * valor que ele recebe por carro vendido. Calcule e escreva o salário final do vendedor.
+ */
+public class Exercício1 {
+
+    public static void main(String[] args) {
+       
+        String nome = JOptionPane.showInputDialog(null, "Informe seu nome: ");
+        int carros = Integer.parseInt(JOptionPane.showInputDialog("Quantos veiculos voce vendeu?: "));
+        Float salario = Float.parseFloat(JOptionPane.showInputDialog("Informe o salario fixo: "));
+        Float vendas = Float.parseFloat(JOptionPane.showInputDialog("Informe o valor total de suas vendas: "));
+        
+        Float comissao = salario + (0.05f * vendas);
+        
+        String formatsalario = String.format("%.2f", salario);
+        String formatvendas = String.format("%.2f", vendas);
+        String formatcomissao = String.format("%.2f", comissao);
+        
+        JOptionPane.showMessageDialog(null, "Funcionario: " + nome
+        + "\nQuantidade de veiculos vendidos por ele: " + carros
+        + "\nSalario fixo: R$ " + formatsalario
+        + "\nValor total de vendas: R$ " + formatvendas
+        + "\nSalario final: R$ " + formatcomissao);
+        
+        
+        
+        
+    }
+    
+}
