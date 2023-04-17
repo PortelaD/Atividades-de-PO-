@@ -1,0 +1,69 @@
+public static void main(String[] args) {
+  
+        int hab = 0, contMulheresCastanhas = 0, idade = 0;
+        String sexo []= {"Masculino", "Feminino"};
+        String corOlhos[]={"Azul", "Verde", "Castanho", "Preto"};
+        String corCabelos [] = {"Loiro", "Castanho", "Verde", "Ruivo"};
+        float salario = 0;
+ 
+       
+        while(idade != -1){
+        
+            int selectSexo = JOptionPane.showOptionDialog(null, "Informe o sexo:",
+                null, JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, 
+                null, sexo, sexo[0]);
+             
+       
+            int selectOlhos = JOptionPane.showOptionDialog(null, "Informe a cor dos olhos: ",
+                null, JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                null, corOlhos, corOlhos[0]);
+        
+            int selectCabelo = JOptionPane.showOptionDialog(null, "Informe a cor dos cabelos: ",
+                null, JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                null, corCabelos, corCabelos[0]);
+        
+        do{
+        
+            salario = Float.parseFloat(JOptionPane.showInputDialog(null,"Informe o salário: "));
+               
+                if(salario < 0){
+            
+                    JOptionPane.showMessageDialog(null,"SALÁRIO INVÁLIDO!", "ERRO",JOptionPane.ERROR_MESSAGE);
+            
+            }
+                
+        }while (salario < 0);
+        
+        do{
+        
+            idade = Integer.parseInt(JOptionPane.showInputDialog(null,"Informe a idade: "));
+        
+            if (selectSexo == 1 && selectOlhos == 2 && selectCabelo == 1 && idade >=18 && idade <= 35){
+            
+                contMulheresCastanhas ++;
+            
+        }
+            
+            if (idade >=10 && idade <=100){
+            
+                hab ++;
+                
+        }
+            if (idade !=-1 && idade < 10 || idade > 100){	
+    
+                JOptionPane.showMessageDialog(null,"IDADE INVÁLIDA!", "ERRO",JOptionPane.ERROR_MESSAGE);
+             
+        }
+        
+        }while (idade != -1 && idade < 10 || idade > 100);
+        
+        }
+    
+    
+        float porcentagemMulheresCastanhas = (100 * contMulheresCastanhas)/hab;
+    
+            JOptionPane.showMessageDialog(null,"Habitantes entrevistados: " +hab
+            + "\nPorcentagem total de mulheres castanhas entre 18 e 35 anos: " +porcentagemMulheresCastanhas + "%");
+    
+    }
+}
